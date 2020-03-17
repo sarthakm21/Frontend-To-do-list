@@ -13,10 +13,14 @@ addBtn.addEventListener("click",function(){
     // todo.innerHTML=todoText;
     var deleteTask=document.createElement("BUTTON");
     deleteTask.classList.add("remove-btn");
-    deleteTask.innerHTML="Done!!";
+    deleteTask.textContent="Done!";
     deleteTask.addEventListener("click",function(){
       todo.parentNode.removeChild(todo);
     });
+
+    var done=document.createElement("h2");
+    done.classList.add("doneTask");
+    done.textContent="Done!";
     text.append(todoText);
     todo.append(text);
     todo.append(deleteTask);

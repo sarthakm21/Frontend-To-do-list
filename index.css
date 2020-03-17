@@ -20,9 +20,37 @@
 }
 
 .todo{
+  margin-top: 20px!important;
+  width: 50%;
+  margin: auto;
+}
+
+ul{
   margin-top: 20px;
 }
 
 span{
   margin-right: 100px;
 }
+
+li{
+  display: flex;
+  justify-content: space-between;
+}
+
+.jumbotron{
+  justify-content: space-between;
+  padding: 1rem 1rem !important;
+}
+
+/* .modify{
+  display: flex;
+  width: 70%;
+  justify-content: center;
+} */
+
+/* .half{
+  display: flex;
+  width: 90%;
+  justify-content: center;
+} */

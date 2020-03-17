@@ -17,22 +17,41 @@
 
       <div class="modify">
         <div class="input-group mb-3">
-        <div class="input-group-prepend">
+          <input type="text" class="form-control" placeholder="Enter A Task" id="addText">
+        <div class="input-group-append">
           <button class="btn btn-success" type="button" id="add">Add</button>
         </div>
-        <input type="text" class="form-control" placeholder="Enter A Task" id="addText">
+
       </div>
         <!-- <button type="button" name="button" class="btn btn-danger">Delete</button>
         <button type="button" name="button" class="btn btn-info">Edit</button> -->
       </div>
 
-      <ul id="tasks">
-        
-      </ul>
+      <div class="half">
+        <ul id="tasks">
+
+        </ul>
+      </div>
+
+      <div class="doneTask">
+        <ul id="complete">
+
+        </ul>
+      </div>
+
 
 
     </div>
     <script type="text/javascript" src="app.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $("#addText").keypress(function(event) {
+          if (event.keyCode === 13) {
+              $("#add").click();
+          }
+      });
+    </script>
   </body>
 </html>
